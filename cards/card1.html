@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
+    <title>User Card</title>
+    <style>
+        *{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+  body{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fbfdfa;
+    font-family:'Rubik',sans-serif;
+   
+  }
+ .container{
+    width:320px;
+    height:390px;
+    background-color: #ffff;
+     border:1px solid #f9f9f9;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-content: center;
+     text-align: center;
+     cursor: pointer;
+     transition: all 0.5s ease;
+     position: relative;
+     border-radius: 8px;
+   
+ }
+ .container:hover{
+    box-shadow: 0px 0px 10px  rgba(0,0,0,0.2);
+    transition-delay: 0.5s;
+ }
+ .container:hover img{
+     opacity:0.6;
+ }
+ figure{
+   position: absolute;
+   top: 0;
+   left:0;
+   width: 100%;
+   height:100%;
+   background-color: #f996a7;
+   border-radius:8px;
+ }
+ img{
+    position: absolute;
+   top: 0;
+   left:0;
+   width: 100%;
+   height:100%;
+   border-radius:8px;
+  
+ }
+   
+h2{
+font-size: 1.45rem;
+font-weight: 500;
+line-height: 1.8rem;
+}
+p{
+    margin: 15px 0px 0px;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    transform: translateY(350px);
+    opacity: 0;
+    transition:transform 0.88s ease-in-out;
+}
+ main{
+     position: absolute;
+     left:10%;
+     bottom:20px;
+     width:80%;
+     height:15%;
+     background-color:#fd4867;
+    color: #fff;
+     padding:15px;
+    overflow: hidden;
+    transition: all 0.9s linear;
+    border-radius: 2px;
+    
+    
+ }
+ .container:hover main{
+     left:0;
+     bottom: 0;
+     width: 100%;
+     height: 100%;
+ }
+ 
+.container:hover p{
+    transform: translateY(0px);
+    opacity: 1;
+    transition-delay: 0.5s;
+
+}
+    </style>
+</head>
+<body>
+
+    <div class="container" >
+        <figure>
+            <img src="images/profile-1.jpg" alt="avatar">
+        </figure>
+        <main>
+        <h2>UX/UI Designer</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto libero corrupti ut labore, soluta quaerat? Saepe repellat recusandae dolores accusantium amet quas iure vero, eos molestiae consectetur doloremque quidem laboriosam.</p>
+        </main>
+      
+    </div>
+    <div class="container up">
+           <figure>
+               <img src="images/profile-2.jpg"  alt="avatar">
+           </figure>
+           <main>
+           <h2>Frontend Developer</h2>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto libero corrupti ut labore, soluta quaerat? Saepe repellat recusandae dolores accusantium amet quas iure vero, eos molestiae consectetur doloremque quidem laboriosam.</p>
+         
+        </main>
+          
+      
+    </div>
+    <div class="container">
+            <figure>
+                    <img src="images/profile-3.jpg" alt="avatar">
+                </figure>
+                <main>
+                <h2>FullStack Developer</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto libero corrupti ut labore, soluta quaerat? Saepe repellat recusandae dolores accusantium amet quas iure vero, eos molestiae consectetur doloremque quidem laboriosam.</p>
+            </main>
+           
+      
+    </div>
+  
+  
+</body>
+</html>
