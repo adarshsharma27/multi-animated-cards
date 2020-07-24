@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <title>User Card</title>
+    <style>
+       
+        *{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Bai Jamjuree',sans-serif;
+  }
+  body{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #F7F8FC;
+   
+  }
+ .container{
+    width:290px;
+    height:380px;
+    background-color: #ffff;
+     border:1px solid #f9f9f9;
+     border-radius:5px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-content: center;
+     box-shadow:0px 12px 15px -12px #9DA2AD;
+     cursor: pointer;
+     transition: all 0.5s ease;
+     position: relative;
+     text-align: center;
+     overflow: hidden;
+   
+  
+   
+ }
+ .container:hover{
+    box-shadow:0px 0px 25px 5px rgba(0,0,0,0.1);
+    transition-delay: 0.5s;
+ }
+ 
+ 
+   main{
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       left:0;
+       top:40%;
+       transition: all 0.8s ease;
+       padding:0px 20px;
+       
+   }
+h2{
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    color:#252c42;
+   
+}
+p{
+    font-size: 1rem;
+    letter-spacing: 0.1px;
+    line-height: 2rem;
+    padding-top: 0.5rem;
+    color: #252E40;
+   
+}
+ .icon{
+     position: absolute;
+     left:35%;
+     top:8%;
+    width:90px;
+    height:90px;
+    font-size:2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s ease;
+
+ }
+ .container:nth-child(1):before{
+     content:'';
+     position: absolute;
+     width:0%;
+     height:3px;
+     background-color:#4F82F5;
+     bottom: 0;
+     left:50%;
+     border-radius:20px;
+     transition:all 0.5s ease-in;
+
+ }
+ .container:nth-child(2):before{
+     content:'';
+     position: absolute;
+     width:0%;
+     height:3px;
+     background-color:#D958D0;
+     bottom: 0;
+     left:50%;
+     border-radius:20px;
+     transition:all 0.5s ease-in;
+
+ }
+ .container:nth-child(3):before{
+     content:'';
+     position: absolute;
+     width:0%;
+     height:3px;
+     background-color:#EC8C8C;
+     bottom: 0;
+     left:50%;
+     border-radius:20px;
+     transition:all 0.5s ease-in;
+
+ }
+ .container:nth-child(4):before{
+     content:'';
+     position: absolute;
+     width:0%;
+     height:3px;
+     background-color:#43A779;
+     bottom: 0;
+     left:50%;
+     border-radius:20px;
+     transition:all 0.5s ease-in;
+
+ }
+ .container:hover::before{
+    left:0;
+     width:100%;
+    
+
+ }
+ 
+ 
+ .icon-1{
+    border-radius: 100% 81% 97% 73% / 100% 100% 52% 79% ;
+    color:#4F82F5;
+    background-color: #F3F7FF;
+ }
+ .icon-2{
+     border-radius: 100% 54% 55% 100% / 78% 83% 100% 100%;
+     color:#D958D0;
+     background-color: #F9F3FF;
+    }
+    .icon-3{
+       border-radius: 100% 83% 64% 100% / 100% 100% 53% 46% ;
+       color:#EC8C8C;
+       background-color:#FFF2F2;
+    }
+    .icon-4{
+       border-radius: 100% 60% 73% 86% / 75% 50% 100% 100% ;
+       color:#43A779;
+       background-color:#E9FBF2;
+    }
+ 
+    </style>
+</head>
+<body>
+
+    <div class="container" >
+          <div class="icon icon-1"><i class="far fa-clipboard"></i></div>
+        <main>
+        <h2>adarsh@gmail.com</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto libero corrupti ut labore, soluta quaerat</p>
+     
+        </main>
+    
+    </div>
+    <div class="container">
+            <div class="icon icon-2"><i class="far fa-clock"></i></div>
+           <main>
+           <h2>91+ 8057979202</h2>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto libero corrupti ut labore, soluta quaerat</p>
+         
+         
+        </main>
+          
+      
+    </div>
+    <div class="container">
+            <div class="icon icon-3"><i class="far fa-calendar"></i></div>
+                <main>
+                <h2>2005 Meerut,U.P</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto libero corrupti ut labore, soluta quaerat.</p>
+                
+            </main>
+           
+      
+    </div>
+   <div class="container">
+            <div class="icon icon-4"><i class="fas fa-dollar-sign"></i></div>
+           <main>
+           <h2>91+ 8057979202</h2>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto libero corrupti ut labore, soluta quaerat</p>
+         
+         
+        </main>
+          
+      
+    </div>
+  
+</body>
+</html>
